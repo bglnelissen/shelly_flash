@@ -1,8 +1,8 @@
 # Flash Shelly 1
 
-## Hardware prep
+## Prep
 
-1. Pi running Raspbian-lite with ssh access
+1. Raspbian
 2. Good power supply! Else the flash will randomly fail half way.
 3. Jumper cables
 
@@ -19,32 +19,8 @@ Reboot.
 
 ## Download Shelly firmware
 
-
-
-Get the tools to download the software
-
 ```
-cd ~
-git clone https://github.com/ioprev/shelly-firmware.git
-cd shelly-firmware
-pip3 install -r requirements.txt
-cd tools
-./build_tools.sh
-ls -1 unspiffs8 mkspiffs8
-```
-
-Download the software
-
-```
-cd ~/shelly_firmware
-./shelly_firmware.py --list
-```
-
-Download the specific software, `SHSW-1` for the blue Shelly 1.
-
-```
-cd ~/shelly_firmware
-./shelly_firmware.py --download SHSW-1
+wget https://github.com/bglnelissen/shelly_flash/raw/main/SHSW-1-restore-1.3.0.bin
 ```
 
 ## Install esptool (latest)
@@ -80,7 +56,7 @@ _verwacht vaak connectie problemen, dit gaat niet echt in 1x vlekkeloos_
 
 ```
 cd ~
-esptool.py --port /dev/ttyS0 write_flash 0x00000 ~/shelly-firmware/firmware.bin
+esptool.py --port /dev/ttyS0 write_flash 0x00000 ~/SHSW-1-restore-1.3.0.bin
 ```
 
 Expect:
