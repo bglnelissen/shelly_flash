@@ -1,0 +1,27 @@
+# Shelly firmware download script
+
+Example using the download script. Did not work for me the first time.
+
+```
+cd ~
+git clone https://github.com/ioprev/shelly-firmware.git
+cd shelly-firmware
+pip3 install -r requirements.txt
+cd tools
+./build_tools.sh
+ls -1 unspiffs8 mkspiffs8
+```
+
+Download the software
+
+```
+cd ~/shelly_firmware
+./shelly_firmware.py --list
+```
+
+Download the specific software, `SHSW-1` for the blue Shelly 1.
+
+```
+cd ~/shelly_firmware
+./shelly_firmware.py --download SHSW-1
+```
