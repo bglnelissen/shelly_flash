@@ -2,7 +2,7 @@
 
 I have not been able to find a large collection of `bin` files for every shelly device. In the future I might create this myself by dumping the esp memory in a file. For now this is the way:
 
-1. Flash Tasmota on the device.
+1. Flash Shelly 1 binairy on the device (even if this is not the correct firmware for the device.
   - Backup: `esptool.py --port /dev/tty.usbserial-2110 read_flash 0x00000 0x400000 dump.4mb.bin`
   - Powercycle the device
   - Erase: `esptool.py --port /dev/tty.usbserial-1110 erase_flash`
@@ -15,51 +15,44 @@ _Memo: For other shelly devices, like the Shelly 1PM, look up the device model a
 
 All firmware versions for shelly: <http://api.shelly.cloud/files/firmware>
 
-```
-SH2LED-1
-SHAIR-1
-SHBDUO-1
-SHBLB-1
-SHBTN-1
-SHBTN-2
-SHCB-1
-SHCL-255
-SHDIMW-1
-SHDM-1
-SHDM-2
-SHDW-1
-SHDW-2
-SHEM
-SHEM-3
-SHGS-1
-SHHT-1
-SHIX3-1
-SHMOS-01
-SHMOS-02
-SHPLG-1
-SHPLG-AU1
-SHPLG-IT1
-SHPLG-S
-SHPLG-U1
-SHPLG-UK1
-SHPLG2-1
-SHRGBW2
-SHRGBWW-01
-SHSEN-1
-SHSM-01
-SHSPOT-1
-SHSW-1
-SHSW-21
-SHSW-22
-SHSW-25
-SHSW-44
-SHSW-L
-SHSW-PM
-SHTRV-01
-SHUNI-1
-SHVIN-1
-SHWT-1
-```
+| thing-type        | Model                                                  | Vendor ID |
+| ----------------- | ------------------------------------------------------ | --------- |
+| shelly1           | Shelly 1 Single Relay Switch                           | SHSW-1    |
+| shelly1l          | Shelly 1L Single Relay Switch                          | SHSW-L    |
+| shelly1pm         | Shelly Single Relay Switch with integrated Power Meter | SHSW-PM   |
+| shelly2-relay     | Shelly Double Relay Switch in relay mode               | SHSW-21   |
+| shelly2-roller    | Shelly2 in Roller Mode                                 | SHSW-21   |
+| shelly25-relay    | Shelly 2.5 in Relay Switch                             | SHSW-25   |
+| shelly25-roller   | Shelly 2.5 in Roller Mode                              | SHSW-25   |
+| shelly4pro        | Shelly 4x Relay Switch                                 | SHSW-44   |
+| shellydimmer      | Shelly Dimmer                                          | SHDM-1    |
+| shellydimmer2     | Shelly Dimmer2                                         | SHDM-2    |
+| shellyix3         | Shelly ix3                                             | SHIX3-1   |
+| shellyuni         | Shelly UNI                                             | SHUNI-1   |
+| shellyplug        | Shelly Plug                                            | SHPLG2-1  |
+| shellyplugs       | Shelly Plug-S                                          | SHPLG-S   |
+| shellyem          | Shelly EM with integrated Power Meters                 | SHEM      |
+| shellyem3         | Shelly 3EM with 3 integrated Power Meter               | SHEM-3    |
+| shellyrgbw2-color | Shelly RGBW2 Controller in Color Mode                  | SHRGBW2   |
+| shellyrgbw2-white | Shelly RGBW2 Controller in White Mode                  | SHRGBW2   |
+| shellybulb-color  | Shelly Bulb in Color Mode                              | SHBLB-1   |
+| shellybulb-white  | Shelly Bulb in White Mode                              | SHBLB-1   |
+| shellybulbduo     | Shelly Duo White                                       | SHBDUO-1  |
+| shellybulbduo     | Shelly Duo White G10                                   | SHBDUO-1  |
+| shellycolorbulb   | Shelly Duo Color G10                                   | SHCB-1    |
+| shellyvintage     | Shelly Vintage (White Mode)                            | SHVIN-1   |
+| shellyht          | Shelly Sensor (temperature+humidity)                   | SHHT-1    |
+| shellyflood       | Shelly Flood Sensor                                    | SHWT-1    |
+| shellysmoke       | Shelly Smoke Sensor                                    | SHSM-1    |
+| shellymotion      | Shelly Motion Sensor                                   | SHMOS-01  |
+| shellymotion2     | Shelly Motion Sensor 2                                 | SHMOS-02  |
+| shellygas         | Shelly Gas Sensor                                      | SHGS-1    |
+| shellydw          | Shelly Door/Window                                     | SHDW-1    |
+| shellydw2         | Shelly Door/Window 2                                   | SHDW-2    |
+| shellybutton1     | Shelly Button 1                                        | SHBTN-1   |
+| shellybutton2     | Shelly Button 2                                        | SHBTN-2   |
+| shellysense       | Shelly Motion and IR Controller                        | SHSEN-1   |
+| shellytrv         | Shelly TRV                                             | SHTRV-01  |
 
 | device | model| url |
 | --- | --- | --- |
