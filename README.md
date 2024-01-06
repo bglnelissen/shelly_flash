@@ -3,8 +3,11 @@
 I have not been able to find a large collection of `bin` files for every shelly device. In the future I might create this myself by dumping the esp memory in a file. For now this is the way:
 
 1. Flash Tasmota on the device.
-2. Find the correct device model using <https://kb.shelly.cloud/knowledge-base/shelly-1pm>.
-3. Choose an over the air update with the Shelly firmware using <http://archive.shelly-tools.de>.
+  - Backup: `esptool.py --port /dev/tty.usbserial-2110 read_flash 0x00000 0x200000 shelly1.2mb.bin`
+  - Erase: `esptool.py --port /dev/tty.usbserial-1110 erase_flash`
+  - Write: `esptool.py --port /dev/tty.usbserial-1110 write_flash 0x00000 ./tasmota.bin`
+3. Find the correct device model using <https://kb.shelly.cloud/knowledge-base/shelly-1pm>.
+4. Choose an over the air update with the Shelly firmware using <http://archive.shelly-tools.de>.
 
 _Memo: For other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`. Using the device model you can find the firmware URL at <http://archive.shelly-tools.de>._
 
