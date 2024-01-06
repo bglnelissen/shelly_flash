@@ -1,6 +1,6 @@
 # Flash Shelly devices
 
-I have not been able to find a large collection of `bin` files for every shelly device. In the future I might create this myself by dumping the esp memory in a file. For now this is the way:
+Firmware for the devices can be found here: <https://www.shelly-support.eu/filebase/index.php?filebase/6-shelly-firmware/>
 
 1. Flash Shelly 1 binairy on the device (even if this is not the correct firmware for the device.
   - Backup: `esptool.py --port /dev/tty.usbserial-2110 read_flash 0x00000 0x400000 dump.4mb.bin`
