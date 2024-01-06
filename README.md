@@ -4,7 +4,9 @@ I have not been able to find a large collection of `bin` files for every shelly 
 
 1. Flash Tasmota on the device.
   - Backup: `esptool.py --port /dev/tty.usbserial-2110 read_flash 0x00000 0x200000 shelly1.2mb.bin`
+  - Powercycle the device
   - Erase: `esptool.py --port /dev/tty.usbserial-1110 erase_flash`
+  - Powercycle the device
   - Write: `esptool.py --port /dev/tty.usbserial-1110 write_flash 0x00000 ./tasmota.bin`
 3. Find the correct device model using <https://kb.shelly.cloud/knowledge-base/shelly-1pm>.
 4. Choose an over the air update with the Shelly firmware using <http://archive.shelly-tools.de>.
