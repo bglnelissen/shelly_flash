@@ -1,6 +1,12 @@
-# Flash Shelly 1
+# Flash Shelly devices
 
-_For other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`. Using the device model you can find the firmware URL at <http://archive.shelly-tools.de>._
+I have not been able to find a large collection of `bin` files for every shelly device. In the future I might create this myself by dumping the esp memory in a file. For now this is the way:
+
+1. Flash Tasmota on the device.
+2. Find the correct device model using <https://kb.shelly.cloud/knowledge-base/shelly-1pm>.
+3. Choose an over the air update with the Shelly firmware using <http://archive.shelly-tools.de>.
+
+_Memo: For other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`. Using the device model you can find the firmware URL at <http://archive.shelly-tools.de>._
 
 | device | model| url |
 | --- | --- | --- |
