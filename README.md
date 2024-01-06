@@ -1,6 +1,11 @@
 # Flash Shelly 1
 
-_for other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`._
+_For other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`. Using the device model you can find the firmware URL at <http://archive.shelly-tools.de>._
+
+| device | model| url |
+| --- | --- | --- |
+| Shelly 1 | SHSW-1 | <http://archive.shelly-tools.de/version/v1.9.4/SHSW-1.zip> |
+| Shelly 1PM | SHSW-PM | <http://archive.shelly-tools.de/version/v1.9.4/SHSW-PM.zip> |
 
 ## Prep
 
