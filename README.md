@@ -8,6 +8,54 @@ I have not been able to find a large collection of `bin` files for every shelly 
 
 _Memo: For other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`. Using the device model you can find the firmware URL at <http://archive.shelly-tools.de>._
 
+All firmware versions for shelly: <http://api.shelly.cloud/files/firmware>
+
+```
+SH2LED-1
+SHAIR-1
+SHBDUO-1
+SHBLB-1
+SHBTN-1
+SHBTN-2
+SHCB-1
+SHCL-255
+SHDIMW-1
+SHDM-1
+SHDM-2
+SHDW-1
+SHDW-2
+SHEM
+SHEM-3
+SHGS-1
+SHHT-1
+SHIX3-1
+SHMOS-01
+SHMOS-02
+SHPLG-1
+SHPLG-AU1
+SHPLG-IT1
+SHPLG-S
+SHPLG-U1
+SHPLG-UK1
+SHPLG2-1
+SHRGBW2
+SHRGBWW-01
+SHSEN-1
+SHSM-01
+SHSPOT-1
+SHSW-1
+SHSW-21
+SHSW-22
+SHSW-25
+SHSW-44
+SHSW-L
+SHSW-PM
+SHTRV-01
+SHUNI-1
+SHVIN-1
+SHWT-1
+```
+
 | device | model| url |
 | --- | --- | --- |
 | Shelly 1 | SHSW-1 | <http://archive.shelly-tools.de/version/v1.9.4/SHSW-1.zip> |
