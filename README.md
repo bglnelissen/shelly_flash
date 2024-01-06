@@ -3,7 +3,7 @@
 I have not been able to find a large collection of `bin` files for every shelly device. In the future I might create this myself by dumping the esp memory in a file. For now this is the way:
 
 1. Flash Tasmota on the device.
-  - Backup: `esptool.py --port /dev/tty.usbserial-2110 read_flash 0x00000 0x200000 shelly1.2mb.bin`
+  - Backup: `esptool.py --port /dev/tty.usbserial-2110 read_flash 0x00000 0x400000 dump.4mb.bin`
   - Powercycle the device
   - Erase: `esptool.py --port /dev/tty.usbserial-1110 erase_flash`
   - Powercycle the device
