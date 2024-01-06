@@ -1,5 +1,7 @@
 # Flash Shelly 1
 
+_for other shelly devices, like the Shelly 1PM, look up the device model at <https://kb.shelly.cloud/knowledge-base/shelly-1pm>. The Shelly 1PM is model `SHSW-PM`._
+
 ## Prep
 
 1. Raspbian
