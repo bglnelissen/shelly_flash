@@ -3,7 +3,7 @@
 Firmware for the devices can be found here: <https://www.shelly-support.eu/filebase/index.php?filebase/6-shelly-firmware/>
 
 1. Flash Shelly 1 binairy on the device (even if this is not the correct firmware for the device.
-  - Backup: `esptool.py --port /dev/tty.usbserial-110 read_flash 0x00000 2097152 ./shelly-dump.bin`
+  - Backup: `esptool.py --port /dev/tty.usbserial-110 read_flash 0x00000 0x200000 ./shelly-dump.bin`
   - Powercycle the device
   - Erase: `esptool.py --port /dev/tty.usbserial-1110 erase_flash`
   - Powercycle the device
